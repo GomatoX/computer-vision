@@ -1,0 +1,18 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px 20px;
+  background: #fff;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  font-size: 22px;
+
+  img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+  }
+}
