@@ -39,7 +39,7 @@ class Camera {
     this.socket = new WebSocket('ws://localhost:2020');
     this.socket.binaryType = 'arraybuffer';
 
-    this.socket.onopen = async () => {
+    this.socket.onopen = async() => {
       this.showCameraOutput();
       await this.showOutput();
     };
@@ -49,14 +49,8 @@ class Camera {
 
       if (data.type === 'results') {
         var image = new Image();
-        image.onload = async () => {
-          this.resultsContext.drawImage(
-            image,
-            0,
-            0,
-            this.getVideoSize().width,
-            this.getVideoSize().height
-          );
+        image.onload = async() => {
+          this.resultsContext.drawImage(image, 0, 0, this.getVideoSize().width, this.getVideoSize().height);
           await this.showOutput();
         };
         this.infoBlock.innerHTML = data.data.count;
@@ -78,7 +72,7 @@ class Camera {
           video: true
         })
         .then(stream => {
-          this.video.src = window.URL.createObjectURL(stream);
+          this.video.srcObject = stream;
           this.video.play();
         });
     }
