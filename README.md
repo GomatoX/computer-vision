@@ -1,4 +1,4 @@
 ### Start application
 
-* `yarn` || `npm i`
-* `npm run start:dev` && `npm start` || `yran start:dev` && `yran start`
+- `yarn` || `npm i`
+- `npm run start:back` && `npm start` || `yran start:back` && `yran start`
