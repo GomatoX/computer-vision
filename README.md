@@ -1,4 +1,13 @@
-### Start application
+# Computer Vision
 
-- `yarn` || `npm i`
-- `npm run start:back` && `npm start` || `yran start:back` && `yran start`
+## How to start
+
+- `yarn` || `npm install`
+- `yarn server`
+- `yarn client`
+
+## Resources
+
+- https://www.npmjs.com/package/opencv4nodejs
+- https://opencv.org/
+- https://www.tensorflow.org/

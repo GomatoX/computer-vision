@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.original {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  visibility: hidden;
+}
+
+canvas {
+  max-width: 100vh;
+  max-width: 100vw;
+}
+
+video {
+  height: 100%;
+}
+
+.video {
+  height: 100vh;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  video,
+  canvas {
+    width: 640px;
+    height: 480px;
+  }
+  canvas {
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Arial';
+  text-align: center;
+  width: 100%;
+  font-size: 36px;
+}
